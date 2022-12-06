@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="index.css">
 
     <script src="index.js" defer></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
@@ -27,17 +28,17 @@
         <button class="mobile-nav-toggle" data-visible="false" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
         <nav class="fs-300 nav-sec">
             <ul id="primary-navigation" class="primary-navigation underline-indicators flex">
-                <li class="active">
-                    <a href="#about" class="uppercase nav">About me </a>
+                <li class="active text-center">
+                    <a href="#about" class="uppercase nav text-center">About me </a>
                 </li>
-                <li>
-                    <a href="#skills" class="uppercase nav">Skills</a>
+                <li class="text-center">
+                    <a href="#skills" class="uppercase nav text-center">Skills</a>
                 </li>
-                <li>
-                    <a href="#projects" class="uppercase nav">Projects</a>
+                <li class="text-center">
+                    <a href="#projects" class="uppercase nav text-center">Projects</a>
                 </li>
-                <li>
-                    <a href="#contact" class="uppercase nav">Contact me</a>
+                <li class="text-center">
+                    <a href="#contact" class="uppercase nav text-center">Contact me</a>
                 </li>
             </ul>
         </nav>
@@ -47,17 +48,17 @@
         <div class="grid-flex">
             <div class="flexGrid1">
                 <div>
-                    <p>hellp</p>
+                    <lottie-player class="lottie" src="https://assets9.lottiefiles.com/packages/lf20_0yfsb3a1.json" background="transparent"  speed="1"  style="width: 450px; height: 450px;" loop autoplay></lottie-player>
                 </div>
             </div>
             <div class="flexGrid2">
                 <div>
-                    <h1 class="fs-600 letter-spacing-1">Hi, I'm Maja!</h1>
+                    <h1 class="fs-600 letter-spacing-1">Hi, I'm <span class="highlight">Maja</span>!</h1>
                     <p class="fs-400">
                         I'm a third year Computer Science and Mathematics student at
                         the Queen Mary, University of London.
                         Formerly a junior backend developer at The Golem Foundation's
-                        Wildland Project; I have worked primarly with python and java.
+                        Wildland Project; I have worked primarly with Python and Java.
                         Currently learning Swift and C# in my free time.
                     </p>
                 </div>
