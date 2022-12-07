@@ -53,6 +53,10 @@ body {
     display: flex;
 }
 
+.border{
+    border: 3px solid red;
+}
+
 .text-center {
     text-align: center;
 }
@@ -70,7 +74,7 @@ body {
 
 @media (max-width: 35rem) {
     .primary-navigation {
-        --underline-gap: .7rem;
+        --underline-gap: .9rem;
         position: fixed;
         z-index: 1000;
         inset: 0 0 0 40%;
@@ -79,6 +83,12 @@ body {
         background-color: white;
         margin: 0;
         flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0);
     }
 
     .primary-navigation.underline-indicators > .active {
@@ -90,7 +100,7 @@ body {
         position: absolute;
         z-index: 2000;
         right: 1rem;
-        top: 2rem;
+        top: 0.7rem;
         background: transparent;
         background-image: url(./assets/icon-hamburger.svg);
         background-repeat: no-repeat;
@@ -99,13 +109,16 @@ body {
         border: 0;
         cursor: pointer;
     }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(./assets/icon-close.svg);
+    }
 }
 
 .primary-navigation a {
     text-decoration: none;
     text-align: center;
 }
-
 
 a:visited {
     color: var(--dark-color2);
@@ -128,11 +141,22 @@ a:hover {
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     align-items: center;
     justify-content: space-between;
-    padding: 0.7rem 0.7rem 0rem 0.7rem;
+    padding: 0.9rem 0.9rem 0rem 0.9rem;
     background-color: white;
+    /* border: 2px solid red; */
+}
+
+@media (max-width: 35rem) {
+    .primary-header {
+        padding: 0.9rem 0.9rem 0.9rem 0.9rem;
+    }
+}
+
+.test{
+    width: 300vw;
 }
 
 .nav {
@@ -208,6 +232,15 @@ a:hover {
     padding-right: 1rem;
 }
 
+.skills{
+    align-items: center;
+    width: 100%;
+    padding-top: 1.5rem;
+    width: 25ch;
+}
+
+
+
 
 
 /* typography */
@@ -232,7 +265,7 @@ a:hover {
 /* UNDERLINE INDICATORS */
 .underline-indicators > * {
     cursor: pointer;
-    padding: var(--underline-gap, 1rem) 0;
+    padding: 0.9rem 0;
     border: 0;
     /* border-bottom: .2rem solid hsl( var(--accent-color1) / 0 ); */
     border-bottom: .2rem solid var(--color-white);
