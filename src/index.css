@@ -232,15 +232,64 @@ a:hover {
     padding-right: 1rem;
 }
 
+/* skill section */
+
 .skills{
-    align-items: center;
-    width: 100%;
-    padding-top: 1.5rem;
-    width: 25ch;
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
 }
 
+.skills-wrapper img {
+    padding: 1.25rem;
+}
 
+.skill-logo {
+    width: 11.875rem;
+    height: 11.25rem;
+    margin: 1rem;
+}
 
+.icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    /* box-shadow: 0 3px 15px #bba59c; */
+    padding: 20px;
+    margin: 10px;
+  }
+
+@media (max-width: 50rem) {
+    .skill-logo {
+        width: 8rem;
+        height: 8rem;
+        margin: 0.3rem;
+    }
+
+    .icon-card {
+        background-color: #fff;
+        border-radius: 11px;
+        /* box-shadow: 0 3px 15px #bba59c; */
+        padding: 10px;
+        margin: 0px;
+      } 
+}
+
+@media (max-width: 35rem) {
+    .skill-logo {
+        width: 5rem;
+        height: 5rem;
+        margin: 0.3rem;
+    }
+
+    .icon-card {
+        background-color: #fff;
+        border-radius: 11px;
+        /* box-shadow: 0 3px 15px #bba59c; */
+        padding: 10px;
+        margin: 0px;
+      } 
+} 
 
 
 /* typography */
